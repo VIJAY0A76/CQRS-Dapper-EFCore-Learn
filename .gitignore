@@ -7,6 +7,21 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# MonoDevelop
+*.pidb
+*.userprefs
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -23,26 +38,89 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
+# Visual Studio 2015+ cache/options directory
+.vs/
+.vscode/
+
+# Build artifacts
+*.dll
+*.exe
+*.app
+*.apk
+*.aab
+*.ipa
+*.msi
+*.nupkg
+*.zip
+*.tar.gz
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
-# NuGet Packages
+# Entity Framework Core Migrations
+Migrations/
+
+# NuGet packages
 *.nupkg
-# NuGet Symbol Packages
-*.snupkg
+# The packages folder can be ignored because of PackageRestore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it should be included in source control
+#!**/packages/repositories.config
+
+# Dotnet Core / .NET CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.ipch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tmp
+*.tmp_proj
+*.log
 
 # Others
-~$*
-*~
-CodeCoverage/
+*.cache
+*.vspscc
+*.vssscc
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
 
-# MSBuild Binary and Structured Log
-*.binlog
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Tye
+.tye/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -52,3 +130,27 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Build directories created by popular CI servers
+_ci/
+.circleci/
+.cache/
+.github/
+.travis/
+
+# JetBrains Rider
+.idea/
+
+# Local history for JetBrains IDEs
+.localhistory/
+
+# Local NuGet feeds
+*.localfeed
+
+# Others
+~$*
+*~
+CodeCoverage/
+
+# MSBuild Binary and Structured Log
+*.binlog
